@@ -1,0 +1,236 @@
+@import url(icon.css);
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 13px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+/* UMUMIY STILLAR */
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn{
+    padding: 12px 32px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.46rem;
+    color: #FCF6F5;
+    background: #F3603C;
+border-radius: 22px;
+transition: opacity, box-shadow 0.5s ease-in-out;
+cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0px 15px 15px -10px #FF9F8E;
+    opacity: 0.8;
+}
+
+/* MAIN HEADER */
+.main-header{
+    width: 100%;
+    background: white;
+    top: 0;
+    padding: 56px 0 60px 0;
+}
+
+.main-header .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.46rem;
+    color: #242D52;
+    margin: 0 16px;
+    transition: opacity 0.5s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.main-nav-link:hover{
+    opacity: 0.5;
+}
+
+.main-header .btn{
+    position: relative;
+    z-index: 2;
+}
+
+/* BETTER-PRODUCTS */
+.better-products{
+    padding: 60px 0 66px 0;
+    position: relative;
+}
+
+.better-products::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -268px;
+    width: 670px;
+    height: 970px;
+    background-image: url('../img/headbg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.better-products .column-2{
+    width: 50%;
+}
+
+.about{
+    max-width: 445px;
+}
+
+.images img{
+    position: relative;
+    z-index: 2;
+}
+
+.main-title{
+    font-size: 4.30rem;
+    font-weight: 700;
+    line-height: 4.92rem;
+    letter-spacing: -1px;
+color: #242D52;
+}
+
+.page-text{
+    font-size: 1.23rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #242D52;
+    opacity: 0.5;
+    margin-top: 16px;
+}
+
+.better-products .btn{
+    margin-top: 40px;
+}
+
+/* MANAGE */
+.Manage{
+    padding: 66px 0 73px 0;
+    position: relative;
+}
+
+.Manage::after{
+    content: '';
+    position: absolute;
+    top: 290px;
+    width: 436px;
+    height: 995px;
+    background-image: url(../img/Rectangle\ Copy\ 12.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.different{
+    max-width: 445px;
+    margin-right: 125px;
+}
+
+.progress{
+    max-width: 540px;
+}
+
+.title-manage{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.38rem;
+    color: #242D52;
+    letter-spacing: -0.714286px;
+    margin-top: 5px;
+}
+
+.track{
+    font-size: 1.23rem;
+    font-weight: 700;
+    line-height: 1.76rem;
+    color: #242D52;
+    letter-spacing: -0.285714px;
+    counter-increment: list01-counter;
+}
+
+.progress .track:not(:first-child){
+    margin-top: 46px;
+}
+
+.track::before{
+    content: counter(list01-counter);
+    display: inline-block;
+    width: 67px;
+    height: 39px;
+    background: #F3603C;
+border-radius: 39px;
+    margin-right: 28px;
+    text-align: center;
+    font-size: 1.23rem;
+    font-weight: 700;
+    line-height: 2.76rem;
+    color: white;
+}
+
+.progress .page-text{
+    margin: 19px 0 0 95px;
+}
+
+/* SAID */
+.said{
+    padding: 73px 0 90px 0;
+    text-align: center;
+}
+
+.said .title-manage{
+    margin-bottom: 100px;
+}
+
+.said .row{
+    margin: 0 -15px;
+}
+
+.column-3{
+    width: 33.33%;
+    padding: 0 15px;
+}
+
+.biography{
+    background: #FAFAFA;
+    position: relative;
+    padding: 60px 40px 40px 40px;
+}
+
+.biography img{
+    position: absolute;
+    top: 0;
+    left: 180px;
+    transform: translateY(-50%);
+}
+
+.said .btn{
+    margin-top: 48px;
+}
