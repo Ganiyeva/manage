@@ -1,0 +1,113 @@
+@media(max-width: 1199px){
+    .container{
+        max-width: 850px;
+    }
+    .main-header{
+        padding: 46px 0 35px 0;
+    }
+
+    .better-products{
+        padding: 35px 0 55px 0;
+    }
+    .better-products::after{
+        top: -354px;
+        width: 515px;
+        background-size: contain;
+    }
+    .main-title{
+        font-size: 3.7rem;
+    }
+    .images img{
+        width: 436px;
+    }
+    .Manage{
+        padding: 50px 0 55px 0;
+    }
+    .different{
+        margin-right: 70px;
+    }
+    .Manage::after{
+        width: 312px;
+        background-position: center;
+        right: 0;
+    }
+    .biography{
+        max-width: 410px;
+    }
+    .biography img{
+        left: 170px;
+    }
+    .said .title-manage{
+        margin-bottom: 75px;
+    }
+    .said{
+        padding: 55px 0 100px 0;
+    }
+}
+@media(max-width: 991px){
+    .container{
+        max-width: 700px;
+    }
+    .main-nav-link{
+        margin: 0 10px;
+    }
+    .better-products::after{
+        width: 420px;
+        top: -400px;
+    }
+    .images img{
+        width: 360px;
+    }
+    .main-title{
+        font-size: 3rem;
+        line-height: 4rem;
+        margin: 0;
+    }
+    .better-products .btn{
+        margin-top: 20px;
+    }
+    .Manage{
+        text-align: center;
+    }
+    .Manage .row{
+        display: inline-block;
+        
+    }
+    .different{
+        margin-right: 0;
+        display: inline-block;
+    }
+    .progress{
+        text-align: left;
+        max-width: 445px;
+    }
+    .Manage .page-text{
+        display: inline-block;
+    }
+    .Manage::after{
+        transform: rotate(180deg);
+        top: -280px;
+        z-index: -1;
+    }
+    .progress-text{
+        margin: 0;
+    }
+    .column-3{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .biography{
+        padding: 40px 21px;
+        display: inline-block;
+    }
+    .column-3:not(:first-child){
+        display: none;
+    }
+    .slider{
+        visibility: visible;
+    }
+}
+@media(max-width: 767px){}
+@media(max-width: 565px){}
+/* @media(max-width: 480px){} */
