@@ -100,15 +100,12 @@ cursor: pointer;
 
 .better-products .column-2{
     width: 50%;
+    position: relative;
+    z-index: 1;
 }
 
 .about{
     max-width: 445px;
-}
-
-.images img{
-    position: relative;
-    z-index: 2;
 }
 
 .main-title{
@@ -137,12 +134,12 @@ color: #242D52;
 }
 
 /* MANAGE */
-.Manage{
+.manage{
     padding: 66px 0 73px 0;
     position: relative;
 }
 
-.Manage::after{
+.manage::after{
     content: '';
     position: absolute;
     top: 290px;
@@ -153,9 +150,12 @@ color: #242D52;
     background-position: left;
 }
 
+.manage .row{
+    justify-content: space-between;
+}
+
 .different{
     max-width: 445px;
-    margin-right: 125px;
 }
 
 .progress{
@@ -171,7 +171,7 @@ color: #242D52;
     margin-top: 5px;
 }
 
-.Manage .page-text{
+.manage .page-text{
     width: 350px;
 }
 
@@ -195,7 +195,7 @@ color: #242D52;
     width: 67px;
     height: 39px;
     background: #F3603C;
-border-radius: 39px;
+    border-radius: 39px;
     margin-right: 28px;
     text-align: center;
     font-size: 1.23rem;
@@ -257,7 +257,7 @@ border-radius: 39px;
     display: flex;
     justify-content: space-between;
     margin: 26px auto 0 auto;
-    visibility: collapse;
+    display: none;
 }
 
 .round {
@@ -278,8 +278,8 @@ border-radius: 3.5px;
 /* SIMPLIFY */
 .simplify{
     background-image: url(../img/Rectangle\ Copy\ 19.jpg);
-    height: 220px;
-    padding: 62px 0;
+    padding: 48px 0;
+    background-repeat: no-repeat;
 }
 
 .simplify .row{
@@ -326,7 +326,11 @@ border-radius: 3.5px;
     color: #F3603C;
 }
 
-li{
+.nav{
+    margin: 0;
+}
+
+.nav li{
     list-style-type: none;
     margin-bottom: 13px;
 }
@@ -349,6 +353,9 @@ li{
     border-radius: 22px;
     border: none;
     margin-right: 8px;
+    outline: transparent;
+    border: 1px solid transparent;
+   
 }
 
 .valid{
@@ -363,7 +370,8 @@ li{
 }
 
 .input-footer:focus{
-    outline: none;
+    border: 1px solid red;
+    border-radius: 22px;
 }
 
 .input-footer:focus ~ .valid{

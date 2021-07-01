@@ -20,11 +20,11 @@
     .images img{
         width: 436px;
     }
-    .Manage{
+    .manage{
         padding: 50px 0 55px 0;
     }
     .different{
-        margin-right: 70px;
+        margin-right: 60px;
     }
     .biography{
         max-width: 410px;
@@ -61,32 +61,43 @@
     .better-products .btn{
         margin-top: 20px;
     }
-    .Manage{
+    .manage{
         text-align: center;
     }
-    .Manage .row{
-        display: inline-block;
-        
+    .title-manage{
+        font-size: 2.46rem;
+        letter-spacing: -0.66px;
+    }
+    .manage .row{
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .different{
         margin-right: 0;
-        display: inline-block;
+    }
+    .manage .page-text{
+        width: 100%;
     }
     .progress{
         text-align: left;
         max-width: 445px;
     }
-    .Manage .page-text{
-        display: inline-block;
-    }
-    .Manage::after{
+    .manage::after{
         transform: rotate(180deg);
         top: -280px;
         z-index: -1;
         right: 0;
     }
+    .track{
+        background: #FFF0EC;
+        border-radius: 39px 0px 0px 39px;
+        margin: 0;
+        margin-top: 50px;
+    }
+    
     .progress-text{
         margin: 0;
+        margin-top: 10px;
     }
     .column-3{
         width: 100%;
@@ -101,7 +112,12 @@
         display: none;
     }
     .slider{
-        visibility: visible;
+        display: flex;
+    }
+
+    .input-footer{
+        padding-right: 20px;
+        margin-left: 20px;
     }
 }
 @media(max-width: 767px){}
