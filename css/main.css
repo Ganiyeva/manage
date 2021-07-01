@@ -74,6 +74,12 @@ cursor: pointer;
     opacity: 0.5;
 }
 
+.menu-toggle {
+    border: none;
+    background: transparent;
+    display: none;
+}
+
 .main-header .btn{
     position: relative;
     z-index: 2;
@@ -94,7 +100,7 @@ cursor: pointer;
     height: 970px;
     background-image: url('../img/headbg.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
 }
 
 
@@ -280,6 +286,7 @@ border-radius: 3.5px;
     background-image: url(../img/Rectangle\ Copy\ 19.jpg);
     padding: 48px 0;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .simplify .row{
