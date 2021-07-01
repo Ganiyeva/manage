@@ -26,11 +26,6 @@
     .different{
         margin-right: 70px;
     }
-    .Manage::after{
-        width: 312px;
-        background-position: center;
-        right: 0;
-    }
     .biography{
         max-width: 410px;
     }
@@ -88,6 +83,7 @@
         transform: rotate(180deg);
         top: -280px;
         z-index: -1;
+        right: 0;
     }
     .progress-text{
         margin: 0;
